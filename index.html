@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Квартирник | Аренда квартир в Казани!</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,9 +63,32 @@
                 <div class="header__form">
                     <h1>Аренда квартир в Казани!</h1>
                     <div class="form">
-                        <input type="text" placeholder="Город">
-                        <input type="text" placeholder="Район/метро">
-                        <input type="text" placeholder="Тип жилья">
+                        <label for="city"></label>
+                        <select id="city" name="city" required>
+                            <option value="" hidden>Город</option>
+                            <option value="1">Казань</option>
+                        </select>
+                        <label for="underground"></label>
+                        <select id="underground" name="underground" required>
+                            <option value="" hidden>Район/метро</option>
+                            <option value="1">Авиастроительная</option>
+                            <option value="2">Северный вокзал</option>
+                            <option value="3">Яшьлек</option>
+                            <option value="4">Козья слобода</option>
+                            <option value="5">Площадь Габдуллы Тукая</option>
+                            <option value="6">Суконная слобода</option>
+                            <option value="7">Аметьево</option>
+                            <option value="8">Горки</option>
+                            <option value="9">Проспект Победы</option>
+                            <option value="10">Дубравная</option>
+                        </select>
+                        <label for="type"></label>
+                        <select id="type" name="type" required>
+                            <option value="" hidden>Тип жилья</option>
+                            <option value="1">Общие комнаты</option>
+                            <option value="2">Отдельные комнаты</option>
+                            <option value="3">Жилье целиком</option>
+                        </select>
                         <button class="btn">Подобрать</button>
                     </div>
                     <a class="header__link">Расширенный поиск</a>
@@ -343,7 +366,119 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-center">Все предложения</button>
+                <div class="suggestion__hidden">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="suggestion__items">
+                                <div class="img">
+                                    <img src="img/suggestion/2.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info__room">
+                                        <p>Комнат</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="info__area">
+                                        <p>Площадь, м<sup>2</sup></p>
+                                        <span>59</span>
+                                    </div>
+                                    <div class="info__price">
+                                        <p>Руб/мес</p>
+                                        <span>51 300</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Однокомнатная квартира в ново-стройке не дорого!!!</p>
+                                </div>
+                                <div class="place">
+                                    <p><span>Район:</span> Авиастроительный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="suggestion__items">
+                                <div class="img">
+                                    <img src="img/suggestion/3.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info__room">
+                                        <p>Комнат</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info__area">
+                                        <p>Площадь, м<sup>2</sup></p>
+                                        <span>78</span>
+                                    </div>
+                                    <div class="info__price">
+                                        <p>Руб/мес</p>
+                                        <span>45 000</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Двушка с дизайнерским ремонтом на Южном Шоссе</p>
+                                </div>
+                                <div class="place">
+                                    <p><span>Район:</span> Международный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="suggestion__items">
+                                <div class="img">
+                                    <img src="img/suggestion/4.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info__room">
+                                        <p>Комнат</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="info__area">
+                                        <p>Площадь, м<sup>2</sup></p>
+                                        <span>66</span>
+                                    </div>
+                                    <div class="info__price">
+                                        <p>Руб/мес</p>
+                                        <span>60 000</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Оборудованная двушка с авторским дизайном на Московском проспекте</p>
+                                </div>
+                                <div class="place">
+                                    <p><span>Район:</span> Московский</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="suggestion__items">
+                                <div class="img">
+                                    <img src="img/suggestion/1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info__room">
+                                        <p>Комнат</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="info__area">
+                                        <p>Площадь, м<sup>2</sup></p>
+                                        <span>36</span>
+                                    </div>
+                                    <div class="info__price">
+                                        <p>Руб/мес</p>
+                                        <span>12 560</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Большая двухярусная однушка в центре</p>
+                                </div>
+                                <div class="place">
+                                    <p><span>Район:</span> Шпалерный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-center btn-suggestion">Все предложения</button>
             </div>
         </section>
         <section class="section section-color section-reviews">
@@ -389,7 +524,47 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-center">Все отзывы</button>
+                <div class="review__hidden">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="review">
+                                <div class="review__img">
+                                    <img src="img/review/1.png" alt="">
+                                </div>
+                                <div class="review__item">
+                                    <h4>Кирилл Аркадин</h4>
+                                    <p>За час эфирного времени на Locals – 9 звонков, нашли арендатора за пару часов!!! Работать с сервисом чрезвычайно приятно и очень продуктивно! Спасибо)</p>
+                                    <a class="description">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="review">
+                                <div class="review__img">
+                                    <img src="img/review/2.png" alt="">
+                                </div>
+                                <div class="review__item">
+                                    <h4>Мария</h4>
+                                    <p>Огромное спасибо команде Locals. Буквально с первого просмотра заселились в 15 мин пешком от рабочего места. Процветания вам.</p>
+                                    <a class="description">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="review">
+                                <div class="review__img">
+                                    <img src="img/review/3.png" alt="">
+                                </div>
+                                <div class="review__item">
+                                    <h4>Илья</h4>
+                                    <p>Отличный и удобный сервис, спасибо Вам большое! Сдали квартиру быстро и без лишних хлопот. Будем советовать Вас друзьям и знакомым! Спасибо!</p>
+                                    <a class="description">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-center btn__review">Все отзывы</button>
             </div>
         </section>
         <section class="section section-about">
@@ -452,9 +627,20 @@
     <script>
         $(document).ready(function () {
             var menu = $('.mobile-menu');
+            var btn_review = $('.btn__review');
+            var review_hidden = $('.review__hidden');
+            var btn_suggestion = $('.btn-suggestion');
+            var suggestion_hidden = $('.suggestion__hidden');
+
             $('#nav-icon').click(function(){
                 $(this).toggleClass('open');
                 menu.toggleClass('open');
+            });
+            btn_review.click(function () {
+               review_hidden.toggleClass('open__review');
+            });
+            btn_suggestion.click(function () {
+                suggestion_hidden.toggleClass('open__suggestion')
             });
             $(window).scroll(function () {
                 if($(window).scrollTop() > $(window).height()){
@@ -477,6 +663,7 @@
                 smartSpeed: 600,
                 items: 1
             });
+            $('select').selectize();
         });
     </script>
 </body>
